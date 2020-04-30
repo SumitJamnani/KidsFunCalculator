@@ -1,0 +1,115 @@
+<html>
+	<head>
+		<title>CHILDREN CALCULATOR</title>
+			<script type="text/javascript">
+				function insert(num){
+						document.form.answer.value=document.form.answer.value+num
+				}
+				
+				function equal(){
+						var exp=document.form.answer.value;
+							if(exp){
+							
+							document.form.answer.value=eval(exp)
+							}
+				}
+							
+				function clean(){
+					document.form.answer.value="";
+					}
+					
+				function back(){
+					var exp=document.form.answer.value;
+					document.form.answer.value=exp.substring(0,exp.length-1);
+					}
+				
+			</script>
+			<style>
+				body {
+				        background-size:100%;						background-repeat:no-repeat;
+						background-attachment:fixed;
+						background-position:center;
+					 }
+				#s1
+					 {  font-size:50;
+						height:80;
+						width:80;
+						margin:4;
+						cursor:pointer;
+						align:center;
+					 }
+					 
+				#s2  {
+						width:450;
+						margin:5;
+						font-size:50;
+						padding:5;
+					}
+					#s4  {
+						width:450;
+						margin:5;
+						text-align:right;
+						font-size:50;
+						padding:5;
+					}
+					
+				#s3	 {  font-size:50;
+						height:170;
+						width:80;
+						margin:4;
+						cursor:pointer;
+						align:center;
+					 }
+			</style>
+	</head>
+	
+	
+	<body align="center" background="C:\Users\DELL\Pictures\calculator_pics\images(9).jpg">
+	<form name="form"> 
+		<table border="0">
+		<input type="text" name="answer" id="s4">
+		<br>
+		<table align="center">
+        <tr>
+			<td><input type="button" name="ON" value="C" id="s1" onclick="clean()"></td>
+			<td><input type="button" name="<" value="<" id="s1" onclick="back()"></td>
+			<td><input type="button" name="/" value="/" id="s1" onclick="insert('/')"></td>
+			<td><input type="button" name="*" value="*" id="s1" onclick="insert('*')"></td>
+		</tr>
+		
+		<tr>
+			<td><input type="button" name="7" value="7" id="s1" onclick="insert(7)"></td>
+			<td><input type="button" name="8" value="8" id="s1" onclick="insert(8)"></td>
+			<td><input type="button" name="9" value="9" id="s1" onclick="insert(9)"></td>
+			<td><input type="button" name="-" value="-" id="s1" onclick="insert('-')"></td>
+			
+		</tr>
+
+		<tr>
+			<td><input type="button" name="4" value="4" id="s1" onclick="insert(4)"></td>
+			<td><input type="button" name="5" value="5" id="s1" onclick="insert(5)"></td>
+			<td><input type="button" name="6" value="6" id="s1" onclick="insert(6)"></td>
+			<td><input type="button" name="+" value="+" id="s1" onclick="insert('+')"></td>
+		</tr>
+		
+		<tr>
+			<td><input type="button" name="1" value="1" id="s1" onclick="insert(1)"></td>
+			<td><input type="button" name="2" value="2" id="s1" onclick="insert(2)"></td>
+			<td><input type="button" name="3" value="3" id="s1" onclick="insert(3)"></td>
+			<td><input type="button" name="%" value="%" id="s1" onclick="insert('%')"></td>
+			
+		</tr>
+		
+		
+		<tr>
+			<td><input type="button" name="0" value="0" id="s1" onclick="insert('0')"></td>
+			<td><input type="button" name="00" value="00" id="s1" onclick="insert('00')"></td>
+			<td><input type="button" name="." value="." id="s1" onclick="insert('.')"></td>
+			<td><input type="button" name="=" value="=" id="s1" onclick="equal()"></td>
+		</tr>
+		</table>
+		</form>
+		<h3><a href="D:\CALCULATOR\home.html">PREVIOUS PAGE</a></h3>
+	</body>
+</html>
+	 
