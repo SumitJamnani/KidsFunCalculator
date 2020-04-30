@@ -1,1 +1,7 @@
 # KidsFunCalculator
+
+__________________________________________________________________________________________________________________________________
+
+Hey!! I just made attractive calculator for kids.. where kids can learn basic calculation with easy and attractive interface. Check it out !!
+
+__________________________________________________________________________________________________________________________________
